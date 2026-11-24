@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,12 +19,46 @@
         .container {
             max-width: 600px;
             margin-top: 80px;
+            margin-bottom: 80px;
         }
 
         .form-container {
             background-color: white;
             padding: 30px;
             border-radius: 15px;
+        }
+
+        .section {
+            margin-top: 30px;
+        }
+
+        .work-card {
+            background-color: #f1f5f8;
+            border-radius: 10px;
+            padding: 15px;
+            margin-bottom: 12px;
+        }
+
+        .work-card h5 {
+            color: #4a3958;
+        }
+
+        .work-card p {
+            color: #333;
+        }
+
+        .work-card a {
+            color: #4a3958;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .work-card a:hover {
+            text-decoration: underline;
+        }
+
+        hr {
+            border-color: #aaa;
         }
     </style>
 </head>
@@ -33,6 +68,7 @@
     <div class="container">
         <div class="form-container">
 
+            <!-- homepage: ICT club membership checker -->
             <h1 class="text-center mb-4">ICT Club Membership Checker</h1>
 
             <form id="checkForm">
@@ -60,9 +96,81 @@
 
             <p id="result" class="mt-3 text-center fw-semibold"></p>
 
+            <hr>
+
+            <!-- my previous works -->
+            <div class="section">
+
+                <h2 class="fw-bold">My Previous Works</h2>
+
+                <p>
+                    Here are some of the webpages I have created.
+                </p>
+
+                <!-- seatwork 1 -->
+                <div class="work-card">
+                    <h5 class="fw-bold">Webpage 1: Seatwork 1 - Club Member Checker</h5>
+
+                    <p>
+                        A webpage showcasing one of my previous
+                        HTML and CSS projects.
+                    </p>
+
+                    <a href="https://aeolusponce.github.io/Fairview_ICT10_Q2Seatwork1_Ponce_Philip/"
+                       target="_blank" rel="noopener noreferrer">
+                        View Project →
+                    </a>
+                </div>
+
+                <!-- skills test -->
+                <div class="work-card">
+                    <h5 class="fw-bold">Webpage 2: Skills Test - Element Checker</h5>
+
+                    <p>
+                        A Python-powered webpage that displays
+                        information about different elements.
+                    </p>
+
+                    <a href="https://aeolusponce.github.io/FV_ICT10_Q2SkillsTest_Ponce_Philip/"
+                       target="_blank" rel="noopener noreferrer">
+                        View Project →
+                    </a>
+                </div>
+
+                <!-- drill 2 -->
+                <div class="work-card">
+                    <h5 class="fw-bold">Webpage 3: Drill 2 - School Club Members</h5>
+
+                    <p>
+                        A webpage that displays information about
+                        different school club members.
+                    </p>
+
+                    <a href="https://aeolusponce.github.io/Fairview_ICT10Topaz_Q2Drill2_Ponce_Philip/"
+                       target="_blank" rel="noopener noreferrer">
+                        View Project →
+                    </a>
+                </div>
+
+            </div>
+
+            <hr>
+
+            <!-- footer -->
+            <div class="text-center mt-4">
+                <p class="mb-0">
+                    Created by Philip Joaquin P. Ponce
+                </p>
+
+                <small>
+                    © 2026 Q2 ICT Project OBFV
+                </small>
+            </div>
+
         </div>
     </div>
 
+    <!-- original python script -->
     <script type="py">
 from pyscript import document
 
